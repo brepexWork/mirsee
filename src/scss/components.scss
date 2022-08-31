@@ -1,0 +1,754 @@
+@import "mixin";
+
+.componentFlags {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-textarea {
+      display: flex;
+      justify-content: space-between;
+
+      .textarea {
+        width: 60%;
+
+        &-title {
+          @include font_large;
+        }
+
+        .textarea-links {
+          display: flex;
+          margin-top: 50px;
+
+          a {
+            @include font_standard;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color_grey;
+            transition: 0.3s all ease;
+
+            &:hover {
+              color: black;
+              transition: 0.3s all ease;
+            }
+
+          }
+
+          a:not(:last-child) {
+            margin-right: 20px;
+
+          }
+        }
+
+      }
+
+      .description {
+        width: 40%;
+
+        .text {
+          @include font_standard;
+          text-align: right;
+
+        }
+      }
+    }
+
+    hr {
+      margin: 20px 0px;
+    }
+
+    .wrapper-elements {
+      .element {
+        margin-top: 50px;
+
+        .element-title {
+          @include font_large;
+          font-weight: bold;
+          margin: 20px 0;
+        }
+
+        .element-flags {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          margin-top: 60px;
+
+          .flag {
+            background: white;
+            box-shadow: 0 0 8px black;
+            width: min(380px , 15%);
+            border-radius: 15px;
+            display: block;
+            margin-top: 20px;
+            transition: 0.2s all ease;
+            margin-left: 30px;
+
+            &:hover {
+              box-shadow: 0 0 15px black;
+              transition: 0.2s all ease;
+            }
+
+            &-wrapper {
+              padding: 20px 0;
+
+              .image {
+                width: 70%;
+                margin: auto;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              .country {
+                text-align: center;
+                @include font_standard;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+.componentMain {
+  background-blend-mode: multiply;
+  background: url("/public/image/background/main/main.jpg") no-repeat center / cover;
+  background-color: rgba(0, 0, 0, 0.51);
+  @include adaptiv-padding(150, 80);
+  position: relative;
+  z-index: 2;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .wrapper-body {
+      color: white;
+      font-family: 'Gilroy', sans-serif;
+      width: 40%;
+
+      .body-title {
+        @include adaptiv-font(72, 22);
+        font-weight: bold;
+
+        span {
+          font-family: 'eurofurence', sans-serif;
+        }
+      }
+
+      .body-description {
+        @include adaptiv-font(22, 18);
+        margin-top: 40px;
+      }
+
+      .body-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+        a, button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: none;
+          border: 2px solid $color_gold;
+          padding: 15px 20px 10px 20px;
+          width: 100%;
+          max-width: 300px;
+          @include font_average;
+          color: black;
+          text-transform: uppercase;
+          box-shadow: 0 0 3px white;
+          transition: 0.5s all ease;
+          background: $color_gold;
+
+          &:hover {
+            box-shadow: 0 0 13px white;
+            transition: 0.5s all ease;
+          }
+
+          span:first-child {
+            margin-right: 15px;
+
+          }
+
+          span:last-child {
+            width: 20px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+        }
+
+        .text {
+          @include adaptiv-font(20, 15);
+          margin-left: 20px;
+
+          span {
+            color: $color_gold;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+      .body-statistics {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        .static {
+          width: 30%;
+          display: flex;
+
+          &:first-child {
+            display: none;
+          }
+
+          .textarea {
+            .title {
+              font-weight: bold;
+              @include adaptiv-font(22, 18);
+            }
+
+            .description {
+              @include adaptiv-font(15, 14)
+            }
+          }
+
+          .image {
+            margin-right: 10px;
+
+            img {
+              height: 40px;
+              width: auto;
+            }
+          }
+        }
+      }
+
+    }
+
+    .wrapper-form {
+      background: rgba(255, 255, 255, 0.56);
+      border-radius: 15px;
+      font-family: "Rubik", sans-serif;
+      width: 40%;
+      max-width: 420px;
+      padding: 15px;
+
+      .form-wp {
+        background: white;
+        padding: 35px;
+        box-sizing: border-box;
+        border-radius: 15px;
+
+        .title {
+          @include adaptiv-font(22, 18);
+        }
+
+        .description {
+          @include adaptiv-font(16, 14);
+          font-weight: 200;
+          margin-top: 20px;
+        }
+
+        input {
+          margin-top: 25px;
+          padding: 15px 0 15px 28px;
+          border: none;
+          background: none;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+          @include adaptiv-font(18, 16);
+          font-weight: 300;
+          width: 100%;
+        }
+
+        button {
+          @include button;
+          margin-top: 50px;
+          transition: 0.2s all linear;
+
+          &:hover {
+            transition: 0.2s all ease-in-out;
+            box-shadow: 0 0 15px $color_gold;
+            background: $color_gold;
+            color: white;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+.componentCalculate {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-calc {
+      border: 4px solid $color_gold;
+      border-radius: 25px;
+
+      .calc-wp {
+        padding: 60px 40px;
+        box-sizing: border-box;
+        .wp-title {
+          text-align: center;
+          @include font_large;
+          text-transform: uppercase;
+        }
+
+        .wp-body {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+
+          .element {
+            width: 30%;
+            margin-top: 60px;
+
+            & > input {
+              width: 100%;
+              padding: 20px 10px 20px 25px;
+              border-radius: 25px;
+              outline: none;
+              border: 1px solid black;
+              @include font_standard;
+            }
+
+            .title {
+              margin-bottom: 40px;
+              @include font_large;
+            }
+
+            .chooses {
+              display: flex;
+              flex-wrap: wrap;
+
+              .choose {
+                display: block;
+                position: relative;
+
+                &:not(:last-child) {
+                  margin-right: 20px;
+                }
+
+                input {
+                  opacity: 0;
+                  position: absolute;
+                }
+
+                .text {
+                  padding: 10px 15px;
+                  @include font_standard;
+                  border-radius: 25px;
+                }
+
+                input:checked + .text {
+                  background: $color_gold;
+                }
+              }
+            }
+          }
+        }
+
+        .wp-contact {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-top: 50px;
+
+          input, button {
+            width: 19%;
+            padding: 10px 10px 10px 20px;
+            border: none;
+            @include font_standard;
+          }
+
+          input {
+            border-bottom: 2px solid black;
+            outline: none;
+          }
+
+          button {
+            background: $color_gold;
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.componentSlogan {
+  background: url("/public/image/background/components/slogan.png") no-repeat center / cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7);
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-title {
+      @include font_title;
+      text-align: center;
+      color: white;
+    }
+
+    .wrapper-slogans {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 80px;
+
+      .slogan {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image {
+          width: 30%;
+          max-width: 70px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .text {
+          @include font_average;
+          color: white;
+          width: 65%;
+          align-self: flex-start;
+
+          .title {
+            @include font_standard;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.componentModal_video {
+  width: 100%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  display: none;
+
+  .video {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+.componentFaq {
+  background: rgba(255, 192, 203, 0.2);
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .text {
+        @include font_title;
+      }
+
+      button {
+        @include button;
+        border-radius: 25px;
+        @include font_standard;
+        background: $color_gold;
+        width: 250px;
+      }
+    }
+
+    .wrapper-faq {
+
+      .faq {
+        background: white;
+        margin-top: 15px;
+        border-radius: 15px;
+        user-select: none;
+
+        .faq-wrapper {
+          padding: 20px 40px;
+
+          .quation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            .text {
+              @include font_standard;
+              margin-right: 20px;
+            }
+
+            .plus {
+
+              span {
+                width: 30px;
+                cursor: pointer;
+
+                img {
+                  width: 100%;
+                }
+              }
+
+              span[plus] {
+                display: block;
+              }
+
+              span[arrow] {
+                display: none;
+              }
+
+              &.active {
+                span[plus] {
+                  display: none;
+                }
+
+                span[arrow] {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .answer {
+            @include font_standard;
+            margin-top: 30px;
+            border-top: 4px solid $color_gold;
+            padding-top: 20px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalFull {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.46);
+  z-index: 20;
+  display: none;
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 25px;
+
+    .close {
+      @include font_large;
+      transform: scale(2) rotate(45deg);;
+      font-weight: bold;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      cursor: pointer;
+    }
+
+    &-wrapper {
+      padding: 40px 60px;
+
+      .wrapper-title {
+        @include font_large;
+        text-align: center;
+      }
+
+      .wrapper-description {
+        @include font_standard;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 200;
+      }
+
+      .wrapper-inputs {
+        margin-top: 30px;
+
+        .input {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          input {
+            width: 100%;
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid black;
+            @include font_standard;
+            margin-left: 20px;
+
+          }
+
+          .image {
+            width: 30px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        textarea {
+          width: 100%;
+          height: 200px;
+          background: none;
+          padding: 10px;
+          resize: none;
+          outline: none;
+          margin-top: 30px;
+          @include font_standard;
+
+        }
+      }
+
+      .wrapper-button {
+        width: 100%;
+        max-width: 280px;
+        border: none;
+        margin-top: 40px;
+        background: $color_gold;
+        border-radius: 25px;
+        padding: 15px 10px;
+        @include font_average;
+        transition: 0.5s all ease;
+
+        &:hover {
+          box-shadow: 0 0 8px black;
+          transition: 0.5s all ease;
+        }
+      }
+
+    }
+  }
+
+}
+
+.modalShort {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.46);
+  z-index: 20;
+  display: none;
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 25px;
+
+    .close {
+      @include font_large;
+      transform: scale(2) rotate(45deg);;
+      font-weight: bold;
+      position: absolute;
+      top: 15px;
+      right: 23px;
+      cursor: pointer;
+    }
+
+    &-wrapper {
+      padding: 40px 60px;
+
+      .wrapper-title {
+        @include font_large;
+        text-align: center;
+      }
+
+      .wrapper-description {
+        @include font_standard;
+        margin-top: 30px;
+        text-align: center;
+        font-weight: 200;
+      }
+
+      .wrapper-inputs {
+        margin-top: 30px;
+
+        .input {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          input {
+            width: 100%;
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            border-bottom: 2px solid black;
+            @include font_standard;
+            margin-left: 20px;
+
+          }
+
+          .image {
+            width: 30px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .wrapper-button {
+        width: 100%;
+        max-width: 300px;
+        border: none;
+        margin-top: 40px;
+        background: $color_gold;
+        border-radius: 25px;
+        padding: 15px 10px;
+        @include font_average;
+        transition: 0.5s all ease;
+
+        &:hover {
+          box-shadow: 0 0 8px black;
+          transition: 0.5s all ease;
+        }
+      }
+
+    }
+  }
+
+}

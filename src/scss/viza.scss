@@ -1,0 +1,15 @@
+@import "mixin";
+
+.vizaVizas {
+  @include adaptiv-padding(150, 50);
+}
+
+.test {
+  width: 70%;
+  border: 1px solid black;
+  padding: 20px;
+
+  .text {
+    font-size: 18px;
+  }
+}

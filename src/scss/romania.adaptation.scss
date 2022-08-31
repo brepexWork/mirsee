@@ -1,0 +1,146 @@
+@media screen and (max-width: 1150px) {
+
+  .romaniaAdvantages {
+
+    &-wrapper {
+      .wrapper-container {
+        .container-swiper {
+          .swiper-wrapper {
+            .slide {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .romaniaCitizenship {
+
+    &-wrapper {
+
+      .wrapper-content {
+        display: block;
+
+        .body {
+          width: 90%;
+
+          .body-icons {
+            justify-content: flex-start;
+
+            .icon:not(:last-child) {
+              margin-right: 20px;
+            }
+
+          }
+        }
+
+        .form {
+          width: 90%;
+          max-width: 500px;
+          margin: auto;
+          margin-top: 50px;
+        }
+      }
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .download {
+
+    &-wrapper {
+      display: block;
+
+      .wrapper-image {
+        margin: auto;
+        width: 100%;
+      }
+
+      .wrapper-body {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+
+        .body-text {
+
+          .title {
+            margin: auto;
+          }
+
+        }
+
+        .body-button {
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .romaniaAdvantages {
+
+    &-wrapper {
+
+      .wrapper-container {
+
+        .container-swiper {
+          .swiper-wrapper {
+
+            .slide {
+              .slide-content {
+                padding: 40px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .romaniaAdvantages {
+
+    &-wrapper {
+
+      .wrapper-container {
+
+        .arrows {
+          display: flex;
+        }
+
+        .container-swiper {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+
+          .swiper-wrapper {
+            position: relative;
+            flex-wrap: nowrap;
+
+            .slide {
+              flex-shrink: 0;
+              padding: 10px;
+              box-sizing: border-box;
+
+              .slide-content {
+
+                &:hover {
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

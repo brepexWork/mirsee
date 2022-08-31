@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'eurofurence';
+    src: url('Eurofurencelight.woff2') format('woff2'),
+        url('Eurofurencelight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'eurofurence';
+    src: url('Eurofurencebolditalic.woff2') format('woff2'),
+    url('Eurofurencebolditalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'eurofurence';
+    src: url('Eurofurencebold.woff2') format('woff2'),
+    url('Eurofurencebold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'eurofurence';
+    src: url('Eurofurenceregular.woff2') format('woff2'),
+    url('Eurofurenceregular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+

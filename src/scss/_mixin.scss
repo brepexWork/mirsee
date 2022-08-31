@@ -1,0 +1,60 @@
+$color_gold: #E8B11E;
+$color_blue : #492BC0;
+$color_aquablue : #1D0087;
+$color_grey : #999;
+$color_violet : #2C0054;
+
+@mixin font_title() {
+  @include adaptiv-font(72, 28);
+  font-family: 'Gilroy', sans-serif;
+}
+@mixin font_large() {
+  @include adaptiv-font(32, 22);
+  font-family: 'Monserat', sans-serif;
+
+}
+@mixin font_standard() {
+  @include adaptiv-font(22, 16);
+  font-family: 'Gilroy', sans-serif;
+}
+
+@mixin font_average() {
+  @include adaptiv-font(18, 14);
+  font-family: 'Gilroy', sans-serif;
+}
+
+@mixin font_small() {
+  @include adaptiv-font(15, 9);
+  font-family: 'Gilroy', sans-serif;
+}
+
+
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $maxWidth: 1600;
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((1300px - 320px) / #{$maxWidth}));
+  @media screen and (max-width: 1300px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+}
+
+@mixin adaptiv-padding($maxPadding, $minPadding) {
+  $maxWidth: 1600;
+  $addSize: $maxPadding - $minPadding;
+  $maxWidth: $maxWidth - 320;
+  padding: calc(#{$minPadding + px} + #{$addSize} * ((1300px - 320px) / #{$maxWidth})) 0px!important;
+  @media screen and (max-width: 1600px) {
+    padding: calc(#{$minPadding + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})) 0px!important;
+  }
+}
+
+@mixin button() {
+  background: none;
+  border: 3px solid $color_gold;
+  @include adaptiv-font(18, 16);
+  padding: 10px 0px;
+  min-width: 180px;
+  max-width: 300px;
+}

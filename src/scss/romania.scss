@@ -1,0 +1,315 @@
+@import "mixin";
+
+.romaniaCitizenship {
+  background: url("/public/image/background/main/citizenship.jpg") no-repeat center / cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+  @include adaptiv-padding(150, 80);
+
+  &-wrapper {
+    & > .wrapper-title {
+      @include font_title;
+      color: white;
+    }
+
+    & > .wrapper-description {
+      @include font_standard;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .wrapper-content {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .body {
+        width: 50%;
+
+        .body-icons {
+          display: flex;
+          justify-content: space-between;
+
+          .icon {
+            width: 85px;
+
+            .image {
+              width: 60px;
+              display: block;
+              margin: auto;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .text {
+              @include font_small;
+              color: white;
+              text-align: center;
+              margin-top: 10px;
+            }
+          }
+        }
+
+        .body-button {
+          color: white;
+          width: 300px;
+          padding: 10px 0;
+          border: 2px solid white;
+          background: none;
+          @include font_standard;
+          transition: 0.5s all ease;
+          margin-top: 30px;
+
+          &:hover {
+            transition: 0.5s all ease;
+            box-shadow: 0 0 8px white;
+          }
+
+        }
+      }
+
+      .form {
+        width: 500px;
+        border-radius: 25px;
+        border: 10px solid rgba(255, 255, 255, 0.58);
+
+        &-wrapper {
+          background: white;
+          padding: 40px 60px;
+
+          .wrapper-title {
+            @include font_large;
+          }
+
+          .wrapper-description {
+            @include font_average;
+            margin-top: 30px;
+          }
+
+          .wrapper-inputs {
+            margin-top: 50px;
+
+            input {
+              width: 100%;
+              padding: 10px 10px 10px 25px;
+              margin-top: 15px;
+              background: none;
+              border: none;
+              border-bottom: 2px solid black;
+              @include font_standard;
+
+            }
+          }
+
+          button {
+            width: 100%;
+            max-width: 300px;
+            background: none;
+            border: 2px solid $color_gold;
+            padding: 15px 0;
+            margin-top: 30px;
+            @include font_standard;
+            transition: 0.5s all ease;
+
+            &:hover {
+              transition: 0.5s all ease;
+              box-shadow: 0 0 8px $color_gold;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.romaniaAdvantages {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-title {
+      @include font_title;
+    }
+
+    .wrapper-container {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+
+      .arrows {
+        justify-content: flex-end;
+        display: none;
+        margin-right: auto;
+        order: 2;
+        margin-top: 40px;
+
+        .arrow {
+          width: 50px;
+          height: 50px;
+          border: 1px solid grey;
+          position: relative;
+          cursor: pointer;
+          border-radius: 50%;
+
+          &:hover {
+            transition: 0.5s all ease;
+            box-shadow: 0 0 13px black;
+          }
+
+          &:last-child {
+            transform: rotate(180deg);
+            margin-left: 20px;
+          }
+
+          img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+          }
+        }
+      }
+
+      .container-swiper {
+        order: 1;
+
+        .swiper-wrapper {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .slide {
+            width: 30%;
+            box-sizing: border-box;
+            margin-top: 30px;
+
+            .slide-content {
+              box-shadow: 0 0 10px black;
+              box-sizing: border-box;
+              padding: 40px 60px;
+              height: 100%;
+              transition: 0.5s all ease;
+
+              &:hover {
+                transition: 0.5s all ease;
+                transform: scale(1.1);
+              }
+
+              .title {
+                @include font_large;
+              }
+
+              .description {
+                @include font_standard;
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.romaniaDocuments {
+  @include adaptiv-padding(150, 50);
+  background: url("/public/image/background/romania/documents.png") no-repeat center / cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.52);
+
+  &-wrapper {
+    color: white;
+    .wrapper-title {
+      @include font_title;
+    }
+
+    .wrapper-documents {
+      margin-top: 50px;
+
+      .document {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .mark {
+          width: 30px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .text {
+          @include font_standard;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.download {
+  padding: 80px 0;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .wrapper-image {
+      width: 30%;
+      min-width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .wrapper-body {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .body-text {
+        .title {
+          @include font_large;
+          font-weight: bold;
+          text-align: center;
+          max-width: 450px;
+        }
+
+        .description {
+          @include font_small;
+          color: grey;
+          opacity: 0.7;
+          text-align: center;
+        }
+      }
+
+      .body-button {
+        margin-left: 40px;
+        background: #2d6ec8;
+        min-width: 200px;
+        cursor: pointer;
+
+        button {
+          color: white;
+          text-transform: uppercase;
+          @include font_standard;
+          text-align: center;
+          width: 100%;
+          padding: 15px 20px 10px 20px;
+          display: block;
+          background: none;
+          border: none;
+        }
+      }
+    }
+
+  }
+}

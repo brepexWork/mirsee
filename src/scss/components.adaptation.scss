@@ -1,0 +1,446 @@
+@import "mixin";
+
+@media screen and (max-width: 1150px) {
+
+  .componentMain {
+    &-wrapper {
+      .wrapper-body {
+        width: 55%;
+
+        .body-button {
+          display: block;
+
+          .text {
+            margin-left: 0px;
+            margin-top: 30px;
+          }
+        }
+
+      }
+
+      .wrapper-form {
+        width: 40%;
+      }
+
+    }
+  }
+
+  .componentCalculate {
+    &-wrapper {
+      .wrapper-calc {
+
+        .calc-wp {
+
+          .wp-body {
+
+            .element {
+              width: 40%;
+
+            }
+          }
+
+          .wp-contact {
+
+            input, button {
+              width: 40%;
+              margin-top: 40px;
+            }
+
+            input {
+
+            }
+
+            button {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .componentSlogan {
+    &-wrapper {
+      .wrapper-title {
+      }
+
+      .wrapper-slogans {
+
+        .slogan {
+          display: block;
+
+          .image {
+            width: 50px;
+            margin-bottom: 50px;
+          }
+
+          .text {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .componentFlags {
+    &-wrapper {
+      .wrapper-textarea {
+        display: block;
+
+        .textarea {
+          width: 100%;
+
+          .textarea-links {
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+              width: 0;
+            }
+
+          }
+
+        }
+
+        .description {
+          width: 90%;
+
+          .text {
+            text-align: left;
+          }
+        }
+      }
+
+      .wrapper-elements {
+        .element {
+          .element-flags {
+            justify-content: center;
+
+            .flag {
+              width: 22%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .componentMain {
+    &-wrapper {
+      display: block;
+
+      .wrapper-body {
+        width: 90%;
+        margin: auto;
+
+        .body-button {
+          .text {
+            display: none;
+          }
+        }
+
+        .body-statistics {
+          flex-wrap: wrap;
+          .static {
+            width: 40%;
+            margin-top: 50px;
+
+            &:first-child {
+              display: flex;
+            }
+          }
+        }
+      }
+      .wrapper-form {
+        margin: auto;
+        margin-top: 50px;
+        width: 70%;
+      }
+    }
+  }
+
+  .componentSlogan {
+    &-wrapper {
+      .wrapper-title {
+      }
+
+      .wrapper-slogans {
+        justify-content: space-around;
+
+        .slogan {
+          width: 45%;
+          margin-top: 40px;
+          display: flex;
+
+          .text {
+            text-align: justify;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .componentCalculate {
+    &-wrapper {
+      .wrapper-calc {
+        .calc-wp {
+          .wp-body {
+            justify-content: center;
+
+            .element {
+              width: 90%;
+
+            }
+          }
+
+          .wp-contact {
+
+            input, button {
+              width: 90%;
+              margin-top: 40px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .componentSlogan {
+    &-wrapper {
+
+      .wrapper-slogans {
+
+        .slogan {
+          width: 90%;
+
+          .text {
+            text-align: start;
+          }
+
+        }
+      }
+    }
+  }
+
+  .componentFaq {
+
+    &-wrapper {
+      .wrapper-title {
+        display: block;
+
+        button {
+          margin-left: auto;
+          display: block;
+          margin-top: 15px;
+          width: 200px;
+        }
+
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .componentFlags {
+    &-wrapper {
+      .wrapper-elements {
+        .element {
+          .element-flags {
+            .flag {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .componentCalculate {
+    &-wrapper {
+      .wrapper-calc {
+        border: none;
+
+        .calc-wp {
+          padding: 60px 10px;
+
+          .wp-title {
+            width: 80vw;
+          }
+
+          .wp-body {
+            .element {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .componentMain {
+    background-color: rgba(0, 0, 0, 0.76);
+
+    &-wrapper {
+      .wrapper-body {
+
+        .body-statistics {
+          margin-top: 10px;
+          .static {
+            width: 90%;
+          }
+        }
+      }
+      .wrapper-form {
+        width: 90%;
+
+        .form-wp {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .componentFaq {
+
+    &-wrapper {
+
+      .wrapper-faq {
+
+        .faq {
+
+          .faq-wrapper {
+            padding: 10px 20px;
+
+            .quation {
+
+              .text {
+                @include font_standard;
+              }
+
+              .plus {
+
+                span {
+                  width: 20px;
+                }
+              }
+
+            }
+
+            .answer {
+              @include font_average;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modalFull {
+
+    .modal {
+
+      &-wrapper {
+        padding: 50px 30px;
+
+        .wrapper-inputs {
+
+          textarea {
+            height: 150px;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .componentFlags {
+    &-wrapper {
+      .wrapper-elements {
+        .element {
+          .element-flags {
+            justify-content: center;
+
+            .flag {
+              width: 60%;
+
+              &-wrapper {
+                .image {
+                  width: 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .componentCalculate {
+    &-wrapper {
+      .wrapper-calc {
+
+        .calc-wp {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .modalFull {
+
+    .modal {
+
+      &-wrapper {
+        padding: 30px 30px;
+
+        .wrapper-title {
+          text-align: left;
+        }
+
+        .wrapper-description {
+          margin-top: 10px;
+          text-align: left;
+        }
+
+        .wrapper-inputs {
+
+          textarea {
+            height: 100px;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

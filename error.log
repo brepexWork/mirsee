@@ -1,0 +1,44 @@
+[Mon Aug 22 20:01:20.892632 2022] [mpm_prefork:notice] [pid 37869] AH00163: Apache/2.4.54 (Unix) PHP/8.1.8 configured -- resuming normal operations
+[Mon Aug 22 20:01:20.892696 2022] [core:notice] [pid 37869] AH00094: Command line: '/opt/homebrew/opt/httpd/bin/httpd -D FOREGROUND'
+[Thu Aug 25 17:33:00.013791 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Warning:  Undefined array key "children" in /Users/brepex/localhost/mustang/index.php on line 2
+[Thu Aug 25 17:33:00.015243 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Stack trace:
+[Thu Aug 25 17:33:00.015786 2022] [php:notice] [pid 57869] [client ::1:60556] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:33:00.017378 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Warning:  Undefined array key "mans" in /Users/brepex/localhost/mustang/index.php on line 3
+[Thu Aug 25 17:33:00.017423 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Stack trace:
+[Thu Aug 25 17:33:00.017449 2022] [php:notice] [pid 57869] [client ::1:60556] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:33:00.017505 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 17:33:00.017530 2022] [php:notice] [pid 57869] [client ::1:60556] PHP Stack trace:
+[Thu Aug 25 17:33:00.017551 2022] [php:notice] [pid 57869] [client ::1:60556] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:26.001409 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Warning:  Undefined array key "children" in /Users/brepex/localhost/mustang/index.php on line 2
+[Thu Aug 25 17:36:26.002623 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Stack trace:
+[Thu Aug 25 17:36:26.002650 2022] [php:notice] [pid 57831] [client ::1:60594] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:26.003986 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Warning:  Undefined array key "mans" in /Users/brepex/localhost/mustang/index.php on line 3
+[Thu Aug 25 17:36:26.004017 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Stack trace:
+[Thu Aug 25 17:36:26.004039 2022] [php:notice] [pid 57831] [client ::1:60594] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:26.004086 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 17:36:26.004110 2022] [php:notice] [pid 57831] [client ::1:60594] PHP Stack trace:
+[Thu Aug 25 17:36:26.004131 2022] [php:notice] [pid 57831] [client ::1:60594] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:28.966113 2022] [php:notice] [pid 57821] [client ::1:60595] PHP Warning:  Undefined array key "mans" in /Users/brepex/localhost/mustang/index.php on line 3
+[Thu Aug 25 17:36:28.966145 2022] [php:notice] [pid 57821] [client ::1:60595] PHP Stack trace:
+[Thu Aug 25 17:36:28.966160 2022] [php:notice] [pid 57821] [client ::1:60595] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:28.966217 2022] [php:notice] [pid 57821] [client ::1:60595] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 17:36:28.966233 2022] [php:notice] [pid 57821] [client ::1:60595] PHP Stack trace:
+[Thu Aug 25 17:36:28.966248 2022] [php:notice] [pid 57821] [client ::1:60595] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:33.394763 2022] [php:notice] [pid 57710] [client ::1:60596] PHP Warning:  Undefined array key "mans" in /Users/brepex/localhost/mustang/index.php on line 3
+[Thu Aug 25 17:36:33.395180 2022] [php:notice] [pid 57710] [client ::1:60596] PHP Stack trace:
+[Thu Aug 25 17:36:33.395209 2022] [php:notice] [pid 57710] [client ::1:60596] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:33.395316 2022] [php:notice] [pid 57710] [client ::1:60596] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 17:36:33.395378 2022] [php:notice] [pid 57710] [client ::1:60596] PHP Stack trace:
+[Thu Aug 25 17:36:33.395395 2022] [php:notice] [pid 57710] [client ::1:60596] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 17:36:37.667196 2022] [php:notice] [pid 57797] [client ::1:60597] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 17:36:37.667511 2022] [php:notice] [pid 57797] [client ::1:60597] PHP Stack trace:
+[Thu Aug 25 17:36:37.667525 2022] [php:notice] [pid 57797] [client ::1:60597] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 18:11:23.895355 2022] [php:notice] [pid 57915] [client ::1:60782] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 18:11:23.896440 2022] [php:notice] [pid 57915] [client ::1:60782] PHP Stack trace:
+[Thu Aug 25 18:11:23.896479 2022] [php:notice] [pid 57915] [client ::1:60782] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Thu Aug 25 18:11:26.803984 2022] [php:notice] [pid 57915] [client ::1:60782] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Thu Aug 25 18:11:26.804497 2022] [php:notice] [pid 57915] [client ::1:60782] PHP Stack trace:
+[Thu Aug 25 18:11:26.804511 2022] [php:notice] [pid 57915] [client ::1:60782] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0
+[Fri Aug 26 11:18:59.063407 2022] [php:notice] [pid 57710] [client ::1:49417] PHP Warning:  Undefined array key "leadId" in /Users/brepex/localhost/mustang/index.php on line 4
+[Fri Aug 26 11:18:59.063469 2022] [php:notice] [pid 57710] [client ::1:49417] PHP Stack trace:
+[Fri Aug 26 11:18:59.063498 2022] [php:notice] [pid 57710] [client ::1:49417] PHP   1. {main}() /Users/brepex/localhost/mustang/index.php:0

@@ -1,0 +1,308 @@
+@import "mixin";
+
+@media screen and (max-width: 1500px) {
+
+  .templateRules {
+
+    &-wrapper {
+
+      .wrapper-rules {
+
+        .rule {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .templateCosts {
+
+    &-wrapper {
+
+      .wrapper-services {
+        display: block;
+
+        .services-lists {
+          margin: auto;
+          width: 600px;
+        }
+
+        .services-details {
+          margin: 50px auto;
+          width: 90%;
+
+          .detail {
+
+            &-wrapper {
+
+              .wrapper-list {
+
+                li {
+
+                }
+              }
+
+              .wrapper-button {
+
+                button {
+
+                }
+
+                .cost {
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .templateStatistic {
+
+    &-wrapper {
+      .wrapper-container {
+        width: 95%;
+
+        .container-wp {
+          flex-direction: column;
+
+          .ln {
+            display: none;
+          }
+
+          .text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+              order: 2;
+              text-align: right;
+
+              span {
+                font-weight: bold;
+                color: black;
+              }
+            }
+
+            .description {
+              text-align: left;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .templateList_documents {
+
+    &-wrapper {
+
+      .wrapper-container {
+        display: block;
+
+        .container-textarea {
+          width: 90%;
+          margin: auto;
+
+        }
+
+        .container-form {
+          width: 90%;
+          margin: auto;
+          margin-top: 30px;
+
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .templateRules {
+
+    &-wrapper {
+
+      .wrapper-rules {
+
+        .rule {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .templateRules {
+
+    &-wrapper {
+
+      .wrapper-title {
+        text-align: left;
+      }
+
+      .wrapper-rules {
+        display: block;
+
+        .rule {
+          margin: 20px auto;
+          width: 280px;
+
+          &-wrapper {
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .templateStatistic {
+
+    &-wrapper {
+      .wrapper-container {
+
+        .container-wp {
+          padding: 30px 20px;
+
+          .text {
+            .title {
+              width: 60%;
+            }
+
+            .description {
+              width: 30%;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .templateCosts {
+
+    &-wrapper {
+
+      .wrapper-services {
+
+        .services-lists {
+          min-width: 250px;
+          width: 80%;
+
+          .list {
+            padding: 20px 10px;
+
+            .text {
+              @include font_small;
+            }
+          }
+        }
+
+        .services-details {
+          width: 95%;
+
+          .detail {
+
+            &-wrapper {
+              padding: 40px 20px;
+
+              .wrapper-title {
+                @include font_standard;
+              }
+
+              .wrapper-list {
+                li {
+                  @include font_average
+                }
+              }
+
+              .wrapper-button {
+                display: block;
+
+                button {
+                  @include font_average;
+                  width: 80%;
+                  margin: 20px auto;
+                  display: block;
+                }
+
+                .cost {
+                  margin-top: 20px;
+                  text-align: center;
+                  @include font_standard;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .templateList_documents {
+
+    &-wrapper {
+
+      .wrapper-description {
+        margin-top: 20px;
+      }
+
+      .wrapper-container {
+        display: block;
+
+        .container-textarea {
+          width: 99%;
+
+          .textarea-wrapper {
+            padding: 10px;
+
+            .list {
+              .image {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .container-form {
+          width: 99%;
+
+          .form-wrapper {
+            padding: 40px 20px;
+
+            .description {
+              margin-top: 20px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}

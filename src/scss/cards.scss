@@ -1,0 +1,145 @@
+@import "mixin";
+
+.cardDecoration {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    & > .wrapper-title {
+      @include font_title;
+    }
+
+    .wrapper-swiper {
+      margin-top: 50px;
+
+      .swiper-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .slide {
+          width: 30%;
+          margin-top: 40px;
+
+          .slide-content {
+            box-shadow: 0 0 8px black;
+            padding: 30px 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .content-wrapper {
+              padding: 0 30px;
+              flex-grow: 1;
+
+              .wrapper-title {
+                display: flex;
+                align-items: center;
+
+                .image {
+                  width: 60px;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+
+                .text {
+                  margin-left: 20px;
+
+                  .pre_title {
+                    text-align: center;
+                    @include font_average;
+                  }
+                  .title {
+                    text-align: center;
+                    @include font_standard;
+                  }
+                }
+              }
+
+              .wrapper-body {
+                margin-top: 30px;
+
+                .text {
+                  margin-top: 10px;
+                  @include font_average;
+                }
+              }
+            }
+
+            .costs {
+              background: linear-gradient($color_gold, rgba(243, 220, 13, 0.63));
+              text-align: center;
+              padding: 10px 0;
+              margin: 20px 0;
+
+              .text {
+                @include font_average;
+              }
+
+              .cost {
+                @include font_standard;
+              }
+            }
+
+            button {
+              border: 3px solid $color_blue;
+              width: 200px;
+              padding: 10px 0;
+              display: block;
+              background: none;
+              margin: 20px auto;
+              @include font_standard;
+              transition: 0.5s all ease;
+
+              &:hover {
+                transition: 0.5s all ease;
+                box-shadow: 0 0 8px $color_blue;
+              }
+            }
+
+            .link {
+              text-align: center;
+
+              a {
+                @include font_standard;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .wrapper-arrows {
+      display: none;
+      align-items: center;
+      margin-top: 40px;
+
+      .arrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid black;
+        transition: 0.5s all ease;
+        background: white;
+        cursor: pointer;
+
+        &:last-child {
+          transform: rotate(180deg);
+          margin-left: 20px;
+
+        }
+
+        &:hover {
+          transition: 0.5s all ease;
+          box-shadow: 0 0 8px black;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

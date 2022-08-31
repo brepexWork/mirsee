@@ -1,0 +1,557 @@
+@import "mixin";
+
+@media screen and (max-width: 1600px) {
+  .content {
+    padding: 0 130px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .main {
+    &-wrapper {
+      .wrapper-body {
+        width: 55%;
+
+        .body-button {
+          display: block;
+
+          .text {
+            margin-left: 0px;
+            margin-top: 30px;
+          }
+        }
+
+      }
+
+      & > .wrapper-button {
+        width: 40%;
+      }
+
+    }
+  }
+
+  .ourServices {
+    &-wrapper {
+      .wrapper-container {
+        .container-swiper {
+          .swiper-wp {
+            .slide {
+              width: 32%;
+              &-content{
+                .content-wrapper {
+                  padding: 40px 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    .header-wrapper {
+      .wrapper-menu {
+        display: none;
+      }
+
+      .wrapper-phone {
+        display: none;
+      }
+
+      .wrapper-burger {
+        display: block;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .main {
+    &-wrapper {
+      .wrapper-body {
+        width: 90%;
+        margin: auto;
+
+        .body-button {
+          .text {
+            display: none;
+          }
+        }
+
+        .body-statistics {
+          flex-wrap: wrap;
+          .static {
+            width: 40%;
+            margin-top: 50px;
+
+            &:first-child {
+              display: flex;
+            }
+          }
+        }
+      }
+      & > .wrapper-button {
+        display: none;
+      }
+    }
+  }
+
+  .ourServices {
+    &-wrapper {
+
+      .wrapper-container {
+
+        .arrow {
+          display: block;
+          cursor: pointer;
+
+        }
+
+        .container-swiper {
+          position: relative;
+          height: 400px;
+          width: 95%;
+
+          .swiper-wp {
+            position: absolute;
+            justify-content: flex-start;
+
+            .slide {
+              width: auto;
+              max-width: 800px;
+              &-content {
+                .content-wrapper {
+                  padding: 20px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .cost {
+    &-wrapper {
+      .wrapper-container {
+        display: block;
+
+        .container-buttons {
+          margin: auto;
+        }
+        .container-body {
+          margin: auto;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  .cookie {
+
+    &-wrapper {
+      display: block;
+      padding: 20px 10px;
+
+      .text {
+        width: 100%;
+      }
+
+      button {
+        width: 200px;
+        margin-left: auto;
+        display: block;
+        margin-top: 20px;
+      }
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    background: $color_violet;
+
+    .footer-wrapper {
+      flex-wrap: wrap;
+
+      & > div {
+        &:first-child {
+          width: 60%;
+          height: 100px;
+          margin-bottom: 30px;
+          order: 1;
+          background-position: left;
+        }
+
+        &:nth-child(2) {
+          width: 40%;
+          order: 4;
+        }
+
+        &:nth-child(3) {
+          width: 40%;
+          order: 3;
+        }
+
+        &:last-child {
+          width: 70%;
+          margin: auto;
+          order: 2;
+          margin-bottom: 50px;
+          .links-title {
+            display: none;
+          }
+
+          .links-link {
+            display: flex;
+            justify-content: center;
+
+
+            a {
+              width: 50px;
+              height: 50px;
+              margin-right: 30px;
+
+              &:first-child {
+                background: url("/public/image/icons/footer/icon_insta_mobile.png") no-repeat center / 100% 100%;
+              }
+
+              &:nth-child(2) {
+                background: url("/public/image/icons/footer/icon_vk_mobile.png") no-repeat center / 100% 100%;
+              }
+
+              &:nth-child(3) {
+                background: url("/public/image/icons/footer/icon_whatsapp_mobile.png") no-repeat center / 100% 100%;
+              }
+              &:nth-child(4) {
+                background: url("/public/image/icons/footer/icon_telegram_mobile.png") no-repeat center / 100% 100%;
+              }
+            }
+          }
+
+        }
+      }
+
+      .wrapper-logo {
+        background: url("/public/image/logo_footer.png") no-repeat center top / contain;
+        width: 30%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .wrapper-links {
+
+        .links-title {
+          border-bottom: 2px solid white;
+          color: white;
+        }
+
+        .links-link {
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .citizenship {
+    &-wrapper {
+      .wrapper-icons {
+        .icon {
+          margin-right: 20px;
+
+          .image {
+            width: 40px;
+          }
+        }
+      }
+
+      .wrapper-buttons {
+        button {
+          display: block;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  /*component styles*/
+
+  .componentSwiper-container {
+
+    .arrows {
+      order: 2;
+      margin-top: 40px;
+    }
+    .container-swiper {
+      order: 1;
+      overflow: hidden;
+
+    }
+
+  }
+
+  /*components styles*/
+
+  .cost {
+    &-wrapper {
+      .wrapper-container {
+
+        .container-buttons {
+          width: 80%;
+        }
+
+        .container-body {
+          width: 90%;
+          max-width: 400px;
+          min-width: 300px;
+
+          .element {
+
+            .element-wrapper {
+              padding: 40px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  /*Component style*/
+
+  .called {
+
+    &-wrapper {
+
+      .wrapper-title {
+        text-align: left;
+      }
+
+      .wrapper-description {
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      .wrapper-form {
+        margin-top: 20px;
+        border: 1px solid $color_gold;
+
+        .form-wrapper {
+          padding: 40px 10px;
+
+        }
+      }
+    }
+  }
+
+  /*End component style*/
+
+  .content {
+    padding: 0px 10px;
+  }
+
+  header {
+    .header-wrapper {
+
+      .wrapper-menu {
+        display: none;
+      }
+
+      .wrapper-phone {
+        display: none;
+      }
+
+      .wrapper-burger {
+          display: block;
+        span {
+
+          &:first-child {
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    &-wrapper {
+      .wrapper-body {
+
+        .body-statistics {
+          margin-top: 10px;
+          .static {
+            width: 90%;
+          }
+        }
+      }
+      & > .wrapper-button {
+        display: none;
+      }
+    }
+  }
+
+  .ourServices {
+    &-wrapper {
+
+      .wrapper-container {
+        width: 100%;
+        .arrow {
+          z-index: 2;
+        }
+
+        .container-swiper {
+          position: relative;
+          height: 350px;
+          width: 300px;
+
+          .swiper-wp {
+            position: absolute;
+            justify-content: flex-start;
+
+            .slide {
+              width: auto;
+              max-width: 800px;
+              position: relative;
+              z-index: 1;
+              &-content {
+                .content-wrapper {
+                  padding: 20px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .reviews {
+    &-wrapper {
+
+      .wrapper-swiper {
+
+        .swiper-wp {
+
+          .slide {
+
+            &-content {
+              .content-review {
+                padding: 45px 20px;
+
+                .review-wrapper {
+                }
+              }
+
+              .content-name {
+
+                .names {
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .wrapper-navigation {
+
+        .pagination {
+
+        }
+
+        .arrow {
+
+        }
+      }
+    }
+  }
+
+  .citizenship {
+    &-wrapper {
+      padding: 0;
+
+      .wrapper-icons {
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .icon {
+          margin-right: 0;
+          width: 23%;
+
+          .image {
+          }
+        }
+      }
+
+      .wrapper-buttons {
+        button {
+          width: 240px;
+          margin-left: auto;
+
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      & > div {
+        &:nth-child(2) {
+          width: 80%;
+        }
+        &:nth-child(3) {
+          width: 80%;
+        }
+      }
+      .wrapper-links {
+        margin-top: 40px;
+
+        &:nth-child(4) {
+          margin: 0;
+
+          .links-link {
+            justify-content: flex-start;
+          }
+
+        }
+
+        .links-title {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

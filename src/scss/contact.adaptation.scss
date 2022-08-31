@@ -1,0 +1,85 @@
+@media screen and (max-width: 1200px) {
+  .contactsSteps {
+    &-wrapper {
+      .wrapper-container {
+        .container-swiper {
+          position: relative;
+          overflow: hidden;
+          padding: 20px 0;
+          .swiper-wrapper {
+            position: relative;
+
+            .slide {
+              flex-shrink: 0;
+              padding: 10px;
+
+              .slide-wrapper {
+                box-sizing: border-box;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .contactsMap {
+
+    &-wrapper {
+      display: block;
+
+      .wrapper-body {
+        width: 80%;
+
+      }
+
+      .wrapper-map {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .contactsDirector {
+    &-wrapper {
+      display: block;
+
+      .wrapper-image {
+        display: none;
+      }
+
+     .wrapper-textarea {
+       width: 90%;
+       margin: auto;
+     }
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .contactsMap {
+
+    &-wrapper {
+      display: block;
+
+      .wrapper-body {
+        width: 100%;
+
+      }
+
+      .wrapper-map {
+        width: 100%;
+      }
+    }
+  }
+}

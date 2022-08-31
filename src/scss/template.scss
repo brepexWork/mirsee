@@ -1,0 +1,382 @@
+@import "mixin";
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.templateStatistic {
+  position: relative;
+  transform: translateY(-80px);
+  z-index: 3;
+
+  &-wrapper {
+    .wrapper-container {
+      width: 90%;
+      margin: auto;
+      background: white;
+      border: 1px solid $color_gold;
+      border-radius: 15px;
+
+      .container-wp {
+        padding: 60px 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .ln {
+          width: 2px;
+          background: $color_gold;
+        }
+
+        .text {
+          text-align: center;
+          width: 30%;
+
+          .title {
+            @include font_large;
+            color: black;
+
+          }
+
+          .description {
+            @include font_standard;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.templateCosts {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+
+    & > .wrapper-title {
+      @include font_title;
+    }
+
+    .wrapper-services {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .services-lists {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+
+        .list {
+          background: white;
+          padding: 20px 40px;
+          margin-top: 20px;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+          border: 1px solid black;
+          cursor: pointer;
+          transition: 0.5s all ease;
+
+          &:hover {
+            transition: 0.5s all ease;
+            box-shadow: 0 0 8px black;
+          }
+
+          &.active {
+            background: $color_gold;
+          }
+
+          .text {
+            @include font_standard;
+
+            span {
+              font-weight: bold;
+
+            }
+          }
+
+          .text:first-child {
+            width: 60%;
+          }
+
+          .text:last-child {
+            text-align: right;
+            width: 30%;
+          }
+
+        }
+      }
+
+      .services-details {
+        width: 40%;
+        max-width: 500px;
+        box-sizing: border-box;
+
+        .detail {
+          border: 1px solid $color_gold;
+          border-radius: 15px;
+          display: none;
+
+          &:first-child {
+            display: block;
+          }
+
+          &-wrapper {
+            padding: 60px 40px;
+
+            h2 {
+              @include font_large;
+              margin: 0;
+            }
+
+            ul {
+              padding-left: 30px;
+
+              li {
+                @include font_standard;
+                margin-top: 20px;
+                position: relative;
+
+                &:first-letter {
+                  text-transform: uppercase;
+                }
+
+                &:after {
+                  content: '';
+                  display: inline-block;
+                  width: 30px;
+                  height: 30px;
+                  background: url("/public/image/icons/romania/mark.png") no-repeat center / contain;
+                  position: absolute;
+                  left: -40px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+              }
+            }
+
+            .wrapper-button {
+              margin-top: 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              button {
+                width: 60%;
+                min-width: 20px;
+                background: $color_gold;
+                border-radius: 25px;
+                padding: 15px 0px;
+                border: none;
+                cursor: pointer;
+                @include font_average;
+                transition: 0.5s all ease;
+
+                &:hover {
+                  transition: 0.5s all ease;
+                  box-shadow: 0 0 8px black;
+                }
+              }
+
+              .cost {
+                @include font_standard;
+
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.templateRules {
+  background: url("/public/image/background/template/airplain.png") no-repeat center / cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.65);
+  @include adaptiv-padding(100, 50);
+
+  &-wrapper {
+    & > .wrapper-title {
+      text-align: center;
+      font-weight: bold;
+      @include font_title;
+      color: white;
+    }
+
+    .wrapper-rules {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin-top: 80px;
+      flex-wrap: wrap;
+
+      .rule {
+        width: 300px;
+        background: white;
+        margin-top: 20px;
+
+        &-wrapper {
+          padding: 40px 60px;
+
+          .wrapper-title {
+            display: flex;
+            align-items: center;
+
+            .text {
+              @include font_standard;
+              font-weight: bold;
+              margin-left: 10px;
+            }
+
+            .image {
+              width: 50px;
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          .wrapper-description {
+            @include font_standard;
+            margin-top: 40px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.templateList_documents {
+  @include adaptiv-padding(150, 50);
+
+  &-wrapper {
+    .wrapper-title {
+      @include font_title;
+    }
+
+    .wrapper-description {
+      margin-top: 80px;
+      @include font_standard;
+    }
+
+    .wrapper-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      align-items: flex-start;
+
+      .container-textarea {
+        width: 45%;
+        border: 2px solid $color_gold;
+        border-radius: 25px;
+
+        .textarea-wrapper {
+          padding: 40px;
+          box-sizing: border-box;
+
+          .list {
+            display: flex;
+            margin-top: 30px;
+
+            .image {
+              width: 50px;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .text {
+              @include font_standard;
+              width: 90%;
+              margin-left: 20px;
+
+              h2 {
+                font-weight: bold;
+                margin-top: 10px;
+              }
+
+              & > div {
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+
+      .container-form {
+        width: 40%;
+        border: 2px solid $color_gold;
+        border-radius: 25px;
+
+        .form-wrapper {
+          padding: 40px 60px;
+
+          .title {
+            @include font_large;
+            font-weight: bold;
+          }
+
+          .description {
+            @include font_standard;
+          }
+
+          .inputs {
+            padding: 40px 0;
+
+            input {
+              border: none;
+              border-bottom: 2px solid black;
+              color: $color_blue;
+              outline: none;
+              padding: 10px 10px 10px 20px;
+              width: 100%;
+              margin-top: 15px;
+              @include font_standard;
+            }
+          }
+
+          button {
+            @include button;
+            background: $color_gold;
+            transition: 0.3s all ease;
+            @include font_standard;
+            padding: 10px 20px;
+
+            &:hover {
+              transition: 0.3s all ease;
+              box-shadow: 0 0 8px black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.templateInformation {
+  @include adaptiv-padding(150, 50);
+  &-wrapper {
+    h2 {
+      @include font_title;
+      margin-top: 40px;
+    }
+
+    & > div {
+      @include font_standard;
+      margin-top: 20px;
+    }
+  }
+}

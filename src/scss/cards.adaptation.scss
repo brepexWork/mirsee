@@ -1,0 +1,41 @@
+@media screen and (max-width: 1000px) {
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .cardDecoration {
+
+    &-wrapper {
+
+      .wrapper-swiper {
+        position: relative;
+        overflow: hidden;
+
+
+        .swiper-wrapper {
+          position: relative;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+
+          .slide {
+            width: auto;
+            padding: 10px;
+            flex: 0 0 auto;
+          }
+        }
+      }
+
+      .wrapper-arrows {
+        display: flex;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+
+}

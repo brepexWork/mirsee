@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="397mm" height="420mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 39700 42000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:red;fill-opacity:0.431373}
+    .fil0 {fill:url(#id2)}
+   ]]>
+  </style>
+   <mask id="id0">
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="30041.97" y1="30973.16" x2="37901.83" y2="12744.7">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="0.6" style="stop-opacity:0.501961; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+    <rect style="fill:url(#id1)" x="982.02" y="13551.78" width="36906.95" height="20371.02"/>
+   </mask>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="4631.86" y1="31988.82" x2="36048.6" y2="17667.54">
+   <stop offset="0" style="stop-opacity:1; stop-color:#283ABF"/>
+   <stop offset="0.478431" style="stop-opacity:1; stop-color:#F5D150"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#E80707"/>
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" style="mask:url(#id0)" d="M37864.92 13551.78c648.09,1590.27 -11971.21,3562.33 -17879.3,7242.57 -8062.26,5022.09 -11035.21,11544.98 -19003.6,9137.47l223.63 219.72c2417.02,1271.89 6021.63,4504.23 10101,3339.49 8693.09,-2482.07 19322.94,-4294.56 26491.29,431.77l66.98 -20371.02z"/>
+  <path class="fil1" d="M27614.1 9386.84c338,714.69 2964.87,823.9 3976.27,873.32 8304.85,2143.56 -2552.95,6178.58 -5376.78,6748.78 3031.7,-478.25 8220.95,-1414.64 10061.05,-3579.68 5134.75,-6041.49 -8754,-4074.04 -8755.36,-4068.48l94.82 26.06z"/>
+ </g>
+</svg>

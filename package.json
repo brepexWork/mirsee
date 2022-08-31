@@ -1,0 +1,26 @@
+{
+  "name": "workproject",
+  "version": "1.0.0",
+  "description": "This is project create for company ALEFF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Putilov",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
+    "npm-git-install": "^0.3.0",
+    "sass": "^1.43.2",
+    "swiper": "^7.4.1"
+  },
+  "devDependencies": {
+    "gulp-rename": "^2.0.0",
+    "rename": "^1.0.4"
+  }
+}
